@@ -7,7 +7,7 @@ export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Sign in" color={blueColor} />
+        <Button title="Sign in" onPress={startTabbedApp} color={blueColor} />
       </View>
     );
   }
