@@ -15,6 +15,14 @@ export default class SettingsTab extends Component {
               passProps: {
                 name: 'Wrocław'
               },
+              navigatorButtons: {
+                rightButtons: [
+                  {
+                    title: 'Close',
+                    id: 'close'
+                  }
+                ]
+              },
               animationType: 'slide-up'
             })}
           color={blueColor}
