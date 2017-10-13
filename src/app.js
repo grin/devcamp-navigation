@@ -4,7 +4,9 @@ import HomeIcon from './icons/home.png';
 import SettingsIcon from './icons/settings.png';
 import HomeTab from './HomeTab';
 import SettingsTab from './SettingsTab';
+import Login from './Login';
 
+Navigation.registerComponent('screen.login', () => Login);
 Navigation.registerComponent('screen.welcome', () => Welcome);
 Navigation.registerComponent('screen.homeTab', () => HomeTab);
 Navigation.registerComponent('screen.settingsTab', () => SettingsTab);
