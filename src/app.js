@@ -5,11 +5,11 @@ import SettingsIcon from './icons/settings.png';
 import HomeTab from './HomeTab';
 import SettingsTab from './SettingsTab';
 
-export default function startApp() {
-  Navigation.registerComponent('screen.welcome', () => Welcome);
-  Navigation.registerComponent('screen.homeTab', () => HomeTab);
-  Navigation.registerComponent('screen.settingsTab', () => SettingsTab);
+Navigation.registerComponent('screen.welcome', () => Welcome);
+Navigation.registerComponent('screen.homeTab', () => HomeTab);
+Navigation.registerComponent('screen.settingsTab', () => SettingsTab);
 
+export default function startApp() {
   Navigation.startTabBasedApp({
     tabs: [
       {
