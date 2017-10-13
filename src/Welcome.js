@@ -8,6 +8,14 @@ export default class Welcome extends Component {
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
   }
 
+  onNavigatorEvent = event => {
+    if (event.type === 'NavBarButtonPress') {
+      if (event.id === 'close') {
+        this.props.navigator.dismissModal({ animationType: 'slide-down' });
+      }
+    }
+  };
+
   render() {
     return (
       <View style={styles.container}>
